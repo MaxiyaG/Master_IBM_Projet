@@ -1,0 +1,103 @@
+---
+title: 'Mini Projet 3 : Greffes d’organes'
+author: "GUNDUZ Maxime"
+date: "2023-11-23"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r loadData, echo=F}
+tab <- read.csv("organs.csv", header=TRUE, sep=",")
+attach(tab)
+
+```
+## 1) Créer des récapitulatif statistiques pour chaque organe (mean, median, quartiles, min, max, …) sous forme de
+tableau.
+
+```{r sumaryTab, echo=T}
+summaryTab <- split(tab, Organ)
+lapply(summaryTab,summary)
+```
+
+## 2) Vérifier la présence de valeurs extrêmes avec des boxplots.
+
+```{r extremValues, echo=T}
+boites <- boxplot(Survival~Organ)
+
+```
+
+## 3) Vérifier la normalité et l’égalité des variances
+
+```{r verif_Normalité_Variance, echo=T}
+# Test de Normalité
+
+t = c("Stomach","Bronchus","Colon","Ovary","Breast")
+
+for(i in 1:5){
+  print(shapiro.test(Survival[Organ==t[i]]))
+}
+
+# Test de Variance
+result <- oneway.test(Survival ~ Organ, data = tab)
+print(result)
+p_value <- result$p.value
+
+paste("La p-value du test d'égalité des variances est :", p_value)
+
+
+if (p_value < 0.05) {
+  paste("La p-value est inférieure à 0.05, l'hypothèse nulle d'égalité des variances est rejetté.")
+} else {
+  paste("La p-value est supérieure à 0.05, l'hypothèse nulle d'égalité des variances n'est pas rejetté.")
+}
+
+```
+
+## 4) Transformer les données (log(survival)) et revérifier la normalité et l’égalité des variances
+
+```{r transf_log, echo=T}
+# Appliquer le logarithme
+
+tabLog <- tab
+tabLog$Survival <- log(tabLog$Survival)
+
+# Test de Normalité
+
+for(i in 1:5){
+  print(shapiro.test(tabLog$Survival[tabLog$Organ==t[i]]))
+}
+
+# Test de Variance
+resultLog <- oneway.test(tabLog$Survival ~ tabLog$Organ, data = tab)
+print(resultLog)
+p_valueLog <- resultLog$p.value
+
+paste("La p-value du test d'égalité des variances est :", p_valueLog)
+
+
+if (p_valueLog < 0.05) {
+  paste("La p-value est inférieure à 0.05, l'hypothèse nulle d'égalité des variances est rejetté.")
+} else {
+  paste("La p-value est supérieure à 0.05, l'hypothèse nulle d'égalité des variances n'est pas rejetté.")
+}
+
+```
+
+## 5) Exécuter le test d’ANOVA suivi du test post-hoc de Tukey
+
+```{r anovaPostHoc, echo=T}
+
+resAov <- aov(Survival ~ Organ)
+resTukey <- TukeyHSD(resAov)
+
+summary(resAov)
+summary(resTukey)
+```
+
+## 6) Interpréter les résultats
+
+Il y'a une différence significative entre la survie et les organes (0.001).
+D'aprés le test de Tukey, ici des différences significatives entre certains groupes d'organes sont présente, et ceci indique des variations spécifiques entre les moyennes de survie.

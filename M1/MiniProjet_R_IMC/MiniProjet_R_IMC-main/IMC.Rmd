@@ -1,0 +1,138 @@
+---
+title: "Calcul d’IMC de patients diabétiques et non diabétiques"
+author: "GUNDUZ Maxime"
+date: "2023-11-17"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F)
+```
+
+
+```{r loadData}
+tab <- read.csv("imc.csv", header=TRUE, sep=";")
+attach(tab)
+
+```
+## 1) Créer une fonction permettant de calculer l’IMC
+
+Fonction pour calculer un IMC : 
+
+```{r functionEMC, echo=TRUE}
+imc <- function(poids,taille){
+
+    if(poids > 0 && taille >0){
+        round(calcul_imc <- poids / (taille*taille))
+        return(calcul_imc)
+    } else {
+      
+        return(warning("L'un des arguments et négative"))
+    }
+}
+
+```
+
+## 2) Calculer l’IMC de chaque patient
+
+```{r appel_recurvice, echo=FALSE}
+#mapply(tab,2, MoreArgs=list(poids,taille))
+
+i<-1
+imc_patient = c()
+
+while(i <= nrow(tab)){
+  p <- poids[i]
+  t <- taille[i]
+
+  imc_patient <- append(imc_patient, imc(p,t))
+  
+  i<- i + 1
+}
+
+imc_patient
+```
+
+## 3) Quel est le coefficient de corrélation entre le poids et la taille ? Cette corrélation est-elle significative ?
+
+```{r correlation, echo=FALSE}
+
+correlation= cor.test(poids, taille)
+print(correlation)
+correlation = correlation$p.value
+
+if( (-0.5) <= correlation && correlation <= 0.5)
+  { 
+  print("Il y'a une faible corrélation") 
+  } else if(0.5 < correlation && corelation <=1)
+  {
+  print("Il y'a une Forte corrélation") 
+  } else
+  {
+  print("Il y'a pas de corrélation") 
+  }
+
+```
+## 4) Représenter sur le même graphique la relation entre le poids et la taille pour chaque groupe de patients (diabétiques, non-diabétiques)
+
+```{r graph, echo=FALSE}
+
+diabete <- as.factor(diabete)
+plot(taille, 
+     poids,
+     col = as.integer(diabete) + 1,
+     pch = 7, 
+     xlab = "taille",
+     ylab = "poids",
+     )
+
+legend("topright",
+       legend = levels(diabete),
+       col = 3:2,
+       pch = 16,
+       title = "Diabétique ?")
+```
+
+## 5) Représenter côte à côte les distributions (histogrammes) de l’imc pour chaque groupe de patients.
+
+```{r histogramme, echo=FALSE}
+tab$imc <- imc_patient
+
+tabDiabete <- subset(tab, diabete=="oui")
+tabNonDiabete <- subset(tab, diabete=="non")
+
+par(mfrow=c(1,2))
+
+hist(
+  tabDiabete$imc,
+  xlab="imc",
+  col="purple"
+  )
+
+hist(
+  tabNonDiabete$imc,
+  xlab="imc",
+  col="yellow"
+  )
+
+```
+
+## 6) La différence d’imc entre les groupes est-elle significative?
+
+```{r differenceIMC, echo=FALSE}
+
+grpDiabete <- subset(tab, diabete == "oui")$taille
+grpNonDiabete <- subset(tab, diabete == "non")$taille
+
+res <- t.test(grpDiabete, grpNonDiabete)
+print(res)
+
+if (res$p.value < 0.05) {
+  print("La différence d'IMC entre les groupes est significative")
+} else {
+  print("La différence d'IMC entre les groupes n'est pas significative")
+}
+
+```
+
+Projet encadré par : Mme Julie Marin, Professeur à l'université Sorbonne Paris-Nord pour la promotion de Master 1 de BioInformatique
