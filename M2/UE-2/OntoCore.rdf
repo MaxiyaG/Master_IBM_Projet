@@ -1,0 +1,664 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37/"
+     xml:base="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:DOE="http://cwi.nl/~troncy/DOE#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:metadata="http://data.bioontology.org/metadata/"
+     xmlns:ontolurgences="http://www.limics.fr/ontologies/ontolurgences#"
+     xmlns:ontolurgences1="http://www.limcs.fr/ontologies/ontolurgences#"
+     xmlns:untitled-ontology-37="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37">
+        <owl:imports rdf:resource="http://www.limcs.fr/ontologies/ontolurgences"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#HTA -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#HTA">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.limcs.fr/ontologies/ontolurgences#Patient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#estSuivi -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#estSuivi">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.limcs.fr/ontologies/ontolurgences#Patient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#fumeur -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#fumeur">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.limics.fr/ontologies/ontolurgences#Humain"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#pad -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#pad">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.limics.fr/ontologies/ontolurgences#Humain"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#pas -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#pas">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.limics.fr/ontologies/ontolurgences#Humain"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#risqueCardiovas -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#risqueCardiovas">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.limics.fr/ontologies/ontolurgences#Humain"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topDataProperty">
+        <rdfs:domain rdf:resource="http://www.limics.fr/ontologies/ontolurgences#Humain"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#ARAII -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#ARAII">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Monothérapie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#AdaptationThérapie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#AdaptationThérapie">
+        <rdfs:subClassOf rdf:resource="http://www.limics.fr/ontologies/ontolurgences#Traitement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Bithérapie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Bithérapie">
+        <rdfs:subClassOf rdf:resource="http://www.limics.fr/ontologies/ontolurgences#TraitementMedicamenteux"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Bonne -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Bonne">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#ToleranceTraitement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Diabète -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Diabète">
+        <rdfs:subClassOf rdf:resource="http://www.limics.fr/ontologies/ontolurgences#SigneFonctionnel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#DiurétiqueThiazidique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#DiurétiqueThiazidique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Monothérapie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Faible -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Faible">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#RisqueCardiovasc"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#HTASecondaire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#HTASecondaire">
+        <rdfs:subClassOf rdf:resource="http://www.limics.fr/ontologies/ontolurgences#SigneClinique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#IEC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#IEC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Monothérapie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#IEC_ARAII -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#IEC_ARAII">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Bithérapie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#IEC_Diurétique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#IEC_Diurétique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Bithérapie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#InsuffisanceRénale -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#InsuffisanceRénale">
+        <rdfs:subClassOf rdf:resource="http://www.limics.fr/ontologies/ontolurgences#SigneFonctionnel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Mauvaise -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Mauvaise">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#ToleranceTraitement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Monothérapie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Monothérapie">
+        <rdfs:subClassOf rdf:resource="http://www.limics.fr/ontologies/ontolurgences#TraitementMedicamenteux"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Moyen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Moyen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#RisqueCardiovasc"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#PAD_SupEgal_90 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#PAD_SupEgal_90">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#PressionArterielle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#PAS_SupEgal_140 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#PAS_SupEgal_140">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#PressionArterielle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Persistante -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Persistante">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#SuiviTensionnel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#PressionArterielle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#PressionArterielle">
+        <rdfs:subClassOf rdf:resource="http://www.limics.fr/ontologies/ontolurgences#SigneClinique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#RisqueCardiovasc -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#RisqueCardiovasc">
+        <rdfs:subClassOf rdf:resource="http://www.limics.fr/ontologies/ontolurgences#SigneFonctionnel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Stable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Stable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#SuiviTensionnel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#SuiviTensionnel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#SuiviTensionnel">
+        <rdfs:subClassOf rdf:resource="http://www.limics.fr/ontologies/ontolurgences#SigneParaClinique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#ToleranceTraitement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#ToleranceTraitement">
+        <rdfs:subClassOf rdf:resource="http://www.limics.fr/ontologies/ontolurgences#MaladieEtat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Élevé -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Élevé">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#RisqueCardiovasc"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#cas4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#cas4">
+        <rdf:type rdf:resource="http://www.limcs.fr/ontologies/ontolurgences#Patient"/>
+        <ontolurgences1:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">68</ontolurgences1:age>
+        <ontolurgences1:imc rdf:datatype="http://www.w3.org/2001/XMLSchema#double">28.0</ontolurgences1:imc>
+        <untitled-ontology-37:fumeur rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-37:fumeur>
+        <untitled-ontology-37:pad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">95</untitled-ontology-37:pad>
+        <untitled-ontology-37:pas rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">145</untitled-ontology-37:pas>
+        <untitled-ontology-37:risqueCardiovas>faible</untitled-ontology-37:risqueCardiovas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37/p">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37/valeurAge">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37/valeurIMC">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37/systolique">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37/diastolique">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Évaluation du risque cardiovasculaire faible</rdfs:comment>
+        <rdfs:label>S2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.limcs.fr/ontologies/ontolurgences#Patient"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#HTA"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37/p"/>
+                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.limcs.fr/ontologies/ontolurgences#age"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37/p"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37/valeurAge"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.limcs.fr/ontologies/ontolurgences#imc"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37/p"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37/valeurIMC"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                                        <swrl:arguments>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37/valeurAge"/>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </swrl:arguments>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                                                <swrl:arguments>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37/valeurIMC"/>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30.0</rdf:first>
+                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </swrl:arguments>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#risqueCardiovas"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37/p"/>
+                        <swrl:argument2>faible</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Prescription du suivi pour risque faible</rdfs:comment>
+        <rdfs:label>S3</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.limcs.fr/ontologies/ontolurgences#Patient"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#HTA"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37/p"/>
+                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#risqueCardiovas"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37/p"/>
+                                        <swrl:argument2>faible</swrl:argument2>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#estSuivi"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37/p"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Détection de l&apos;hypertension</rdfs:comment>
+        <rdfs:label>S1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.limcs.fr/ontologies/ontolurgences#Patient"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#pas"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37/p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37/systolique"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#pad"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37/p"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37/diastolique"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37/systolique"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">140</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                                        <swrl:arguments>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37/diastolique"/>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">90</rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </swrl:arguments>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#HTA"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37/p"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

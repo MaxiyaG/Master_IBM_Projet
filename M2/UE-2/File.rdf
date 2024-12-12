@@ -1,0 +1,256 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37/"
+     xml:base="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#ARAII -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#ARAII">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Monothérapie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#AdaptationThérapie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#AdaptationThérapie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Traitement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Bithérapie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Bithérapie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Traitement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Bonne -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Bonne">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#ToleranceTraitement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#DecisionHTA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#DecisionHTA"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Diabète -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Diabète">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#EvaluationRisques"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Diagnostic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Diagnostic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#DecisionHTA"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#DiurétiqueThiazidique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#DiurétiqueThiazidique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Monothérapie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#EvaluationRisques -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#EvaluationRisques">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#DecisionHTA"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Faible -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Faible">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#RisqueCardiovasc"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#HTASecondaire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#HTASecondaire">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Diagnostic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#IEC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#IEC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Monothérapie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#IEC_ARAII -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#IEC_ARAII">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Bithérapie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#IEC_Diurétique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#IEC_Diurétique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Bithérapie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#InsuffisanceRénale -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#InsuffisanceRénale">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#EvaluationRisques"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Mauvaise -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Mauvaise">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#ToleranceTraitement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Monothérapie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Monothérapie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Traitement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Moyen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Moyen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#RisqueCardiovasc"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#PAD_SupEgal_90 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#PAD_SupEgal_90">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#PressionArterielle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#PAS_SupEgal_140 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#PAS_SupEgal_140">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#PressionArterielle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#ParametresCliniques -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#ParametresCliniques">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#DecisionHTA"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Persistante -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Persistante">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#SuiviTensionnel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#PressionArterielle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#PressionArterielle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#ParametresCliniques"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#RisqueCardiovasc -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#RisqueCardiovasc">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#EvaluationRisques"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Stable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Stable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#SuiviTensionnel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#SuiviTensionnel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#SuiviTensionnel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#ParametresCliniques"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#ToleranceTraitement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#ToleranceTraitement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#ParametresCliniques"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Traitement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Traitement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#DecisionHTA"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Élevé -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#Élevé">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/10/untitled-ontology-37#RisqueCardiovasc"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
